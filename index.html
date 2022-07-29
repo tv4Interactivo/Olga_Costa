@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olga Costa</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        class="logo"
+        src="assets/images/logo_4i_303030.png"
+        alt="logo 4 Interativo"
+      />
+
+      <div class="dropdown">
+        <button onclick="toggleDisplay()" id="dropbtn" class="dropbtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          id="dropdown-content"
+          class="dropdown-content animate__animated animate__fadeIn"
+          style="display: none"
+        >
+          <button href="https://tv4interactivo.github.io/4interactivo/">
+            <i class="home fa-solid fa-house"></i>
+          </button>
+          <button onclick="copyURL()" href="#">
+            <i class="share fa-solid fa-share-nodes"></i>
+          </button>
+          <button onclick="changeLang()" href="#">
+            <i class="lang fa-solid fa-language"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="content">
+        <div
+          id="text-esp"
+          style="display: flex;"
+          class="texts animate__animated animate__fadeIn"
+        >
+            <h1>
+              Olga Costa
+            </h1>          
+            <p>
+              <strong>Olga Kostakowsy Fabrikant</strong> nació el 28 de agosto de 1913 en Leipzig, Alemania.
+            </p>
+        </div>
+
+        <div
+          id="text-eng"
+          style="display: none;"
+          class="animate__animated animate__fadeIn texts"
+        >
+          <h1>
+            Olga Costa
+          </h1>
+          <p>
+            <strong>Olga Kostakowsy Fabrikant</strong> was born on august 28th, 1913 in Leipzig, Germany.
+          </p>
+        </div>
+      </div>
+
+      <div id="portrait">
+        <img class="portrait" src="assets/images/portrait.jpg" alt="">
+      </div>
+    </div>
+
+    <div id="bio">
+      <div id="text-esp2" style="display: flex;" class="bio">
+        <p>Sus padres, <strong>Ana Fabricant y Jacob Kostakowsy</strong>, 
+          originarios de <strong>Odesa, Ucrania</strong> emigraron a Alemania durante la 
+          Primera Guerra Mundial. 
+          Su padre, era violinista, director de orquesta y compositor.
+          <br>
+          <br>
+          La familia emigró a México y llegaron al <strong>Puerto de Veracruz el 
+          7 de semptiembre de 1925</strong> cuando Olga tenía 12 años. 
+          Se establecieron en la <strong>Ciudad de México</strong> y comenzaron 
+          a relacionarse con músicos, pintores y escritores como <strong>Diego Rivera,
+          Frida Kahlo y Rufino Tamayo</strong>, entre otros.
+          <br>
+          <br>
+          Olga cambió su apellido a <strong>Costa</strong> debido a las dificultades 
+          que enfrenta en el México post-revolucionario nacionalista, en el que a los 
+          artistas extranjeros no se les quería reconocer.
+          <br>
+          <br>
+          En 1936, Olga y su esposo se trasladan a <strong>Xalapa, Veracruz</strong>  
+          donde comenzó su proceso de autoformación como pintora y realizó las 
+          primeras obras de su carrera artística.
+        </p>
+      </div>
+
+      <div id="text-eng2" style="display: none;" class="bio">
+        <p>Her parents, <strong>Ana Fabricant and Jacob Kostakowsy</strong>, 
+          native to <strong>Odessa, Ukraine</strong> emigrated to Germany during 
+          the first World War. Her father, was a violinist, orchestra director 
+          and composer.
+          <br>
+          <br>
+          The family emigrated to Mexico and arrived to the <strong>Port of Veracruz 
+          on september 7th, 1925</strong> when Olga was 12 yeard old. They settled 
+          in <strong>Mexico City</strong> and begin to interact with musicians, 
+          painters and writers such as <strong>Diego Rivera, Frida Kahlo and Rufino 
+          Tamayo</strong>, among others.
+          <br>
+          <br>
+          Olga changed her lastname to <strong>Costa</strong> due to the difficulties she faced 
+          in post-revolutionary nacionalist Mexico, in which foreinger artists 
+          wouldn't be recognized.
+          <br>
+          <br>
+          In 1936, Olga and her husband moved to <strong>Xalapa, Veracruz</strong> 
+          where she started her self-taught painter process and made the 
+          first artworks of her artistic career.
+        </p>
+      </div>
+    </div>
+
+    <div class="scene">
+      <model-viewer
+        id="model"
+          bounds="tight"
+          src="assets/models/atlante.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          shadow-intensity="1"
+          exposure="1.12"
+          shadow-softness="1"
+          camera-orbit="-0.1708deg 93.25deg auto"
+          camera-target="0.01m -0.02m 0.03112m"
+          min-camera-orbit="auto auto 5.843m"
+          min-field-of-view="15.4deg"
+          disable-zoom
+        >
+
+        <button id="prev" onclick="prev(); changeModel();">
+          anterior
+        </button>
+
+        <button id="next" onclick="next(); changeModel();">
+          siguiente
+        </button>
+
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
+          <div id="ar-prompt">
+            <img src="assets\images\ar_hand_prompt.png" />
+          </div>
+          <div>
+            <img class="imagen" src="assets/images/logo.png" alt="Logo Tv4" />
+          </div>
+        </model-viewer>
+    </div>
+    
+
+    <footer>
+      <p id="text-esp3" style="display: flex;">Derechos reservados 2022</p>
+      <p id="text-eng3" style="display: none;">All rights reserved 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
