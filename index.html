@@ -173,7 +173,9 @@
       <model-viewer
         id="model"
           bounds="tight"
-          src="assets/models/atlante.glb"
+          src="assets/models/auto.gltf"
+          environment-image = "assets/images/studio.hdr"
+          exposure = "0.6"
           ar
           ar-modes="webxr scene-viewer quick-look"
           camera-controls
@@ -188,11 +190,11 @@
         >
 
         <button id="prev" onclick="prev(); changeModel();">
-          anterior
+          <i class="fa-solid fa-angles-left"></i>
         </button>
 
         <button id="next" onclick="next(); changeModel();">
-          siguiente
+          <i class="fa-solid fa-angles-right"></i>
         </button>
 
           <div class="progress-bar hide" slot="progress-bar">

@@ -138,6 +138,31 @@ model-viewer {
   --poster-color: #f9e2dc;
 }
 
+#prev{
+ background-color:#d6ada1;
+ border-radius: 25px;
+ border: none;
+ padding: 1rem 2rem;
+ font-size: 2rem;
+ position: absolute;
+ bottom: 50%;
+ left:50px;
+ cursor: pointer;
+}
+
+#next{
+  background-color: #d6ada1;
+  border-radius: 25px;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 50%;
+  right:50px;
+  cursor: pointer;
+}
+ 
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 5rem;
@@ -157,13 +182,11 @@ p {
 }
 
 footer {
-  font-family: 'Ruda', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem 2rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 footer p{
@@ -185,9 +208,8 @@ footer p{
   }
 
   h1 {
-  
     font-size: 3rem;
-    margin: auto;
+    margin: 0;
   }
 
    p {
@@ -197,12 +219,28 @@ footer p{
   .main{
     flex-direction: column;
     justify-content: space-between;
-    height: 200vh;
+    height: 80vh;
+    padding: 4rem 0;
   }
 
   .content {
     width: 100%;
     height: 50%;
+  }
+
+  .content p{
+    padding: 6rem 2rem;
+  }
+
+  #portrait{
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .portrait{
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
   }
 
   .scene {
@@ -211,10 +249,26 @@ footer p{
     padding: 0;
   }
 
-  footer{
-    padding: 1rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  #bio{
+    padding: 0;
+    display: flex;
+  }
+  
+  .bio{
+    display: flex;
+    background-color: #eac8bf;
+    padding: 3rem;
+    border-radius: 10px;
+  }
+
+  #prev{
+    left: 3%;
+    font-size: 1.5rem;
+  }
+
+  #next{
+    right: 3%;
+    font-size: 1.5rem;
   }
 
   footer p{
@@ -237,22 +291,51 @@ footer p{
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   p {
-    font-size: 1.5rem;
-    margin: 0 6rem;
+    font-size: 2rem;
+    margin: 0;
+    
   }
 
   .main{
     flex-direction: column;
+    padding:0;
+    height: 80vh;
   }
 
   .content {
     width: 100%;
     height: 80%;
     padding: 2rem;
+  }
+
+  #portrait{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .portrait{
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+  }
+
+  #bio{
+    padding: 0;
+    display: flex;
+    margin: 3rem;
+  }
+  
+  .bio{
+    display: flex;
+    background-color: #eac8bf;
+    padding: 3rem;
+    border-radius: 10px;
   }
 }
 

@@ -81,26 +81,43 @@ let counter = 0;
 let model = document.getElementById("model"); 
 
 function prev(){
-  console.log(counter);
+  
   counter -= 1;
   if(counter < 0){
-    counter = 1;
+    counter = 3;
+    
   }
 }
 
 function next(){
-  console.log(counter);
+  
   counter += 1;
-  if(counter > 1){
+  if(counter > 3){
     counter = 0;
+    
   }
 }
 
 function changeModel(){
-  if(counter === 0){
-    model.src = "assets/models/atlante.glb";
+
+  switch(counter){
+    case 0:
+      model.src = "assets/models/auto.gltf";
+      console.log(counter);
+      break;
+    case 1:
+      model.src = "assets/models/cora.gltf";
+      console.log(counter);
+      break;
+    case 2:
+      model.src = "assets/models/flores.gltf";
+      console.log(counter);
+      break;
+    case 3:
+      model.src = "assets/models/frutas.gltf";
+      console.log(counter);
+      break;
   }
-  else if(counter === 1){
-    model.src = "assets/models/4i_model.glb";
-  }
+
+  
 }
