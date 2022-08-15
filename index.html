@@ -70,9 +70,11 @@
           class="dropdown-content animate__animated animate__fadeIn"
           style="display: none"
         >
-          <button href="https://tv4interactivo.github.io/4interactivo/">
+        <a href="https://tv4interactivo.github.io/4interactivo/">
+          <button>
             <i class="home fa-solid fa-house"></i>
           </button>
+        </a>
           <button onclick="copyURL()" href="#">
             <i class="share fa-solid fa-share-nodes"></i>
           </button>
@@ -184,8 +186,9 @@
           shadow-softness="1"
           camera-orbit="-0.1708deg 93.25deg auto"
           camera-target="0.01m -0.02m 0.03112m"
-          min-camera-orbit="auto auto 5.843m"
+          min-camera-orbit="auto auto 1m"
           min-field-of-view="15.4deg"
+          disable-zoom
         >
 
         <button id="prev" onclick="prev(); changeModel();">
